@@ -8,10 +8,30 @@
     --second-text-color: rgba(157, 164, 189, 0.6);
     --third-text-color: #9da4bd;
     --fourth-text-color: #555555;
+    --accent-color: #ff6c00;
 }
 
 body {
     font-family: "Open Sans", sans-serif;
+}
+
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
 }
 
 .list {
@@ -22,10 +42,68 @@ body {
     text-decoration: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 1px solid red;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    background-color: transparent;
+    /* min-width: 160px;
+    height: 40px; */
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    padding: 12px 20px;
+}
+
+.pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+
+.after-title {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
 /* ---------------HEADER------------------ */
 
 .header {
-    background-color: gray;
+    background-color: rgb(46, 43, 43);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-link {
@@ -45,12 +123,6 @@ body {
 }
 
 .header-btn {
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
     color: var(--main-btn-color);
 }
 
@@ -69,11 +141,6 @@ body {
 }
 
 .hero-pre-title {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
     color: rgba(157, 164, 189, 0.6);
 }
 
@@ -86,36 +153,33 @@ body {
 }
 
 .hero-after-title {
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
     color: var(--third-text-color);
+    max-width: 400px;
+}
+
+.hero-after-title b {
+    color: #000000;
 }
 
 /* ---------------ABOUT------------------ */
 
+.about {
+    padding-top: 139px;
+    padding-bottom: 121px;
+}
 .about-pre-title {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
     color: var(--first-text-color);
+    margin-bottom: 20px;
 }
 
 .about-title {
-    font-family: "Raleway", sans-serif;
-    font-size: 42px;
-    line-height: 1.17;
-    letter-spacing: 0.05em;
     color: var(--second-title-color);
+    margin-bottom: 20px;
 }
 
 .about-after-title {
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
     color: var(--fourth-text-color);
+    margin-bottom: 20px;
 }
 
 .about-text {
@@ -123,15 +187,10 @@ body {
     line-height: 1.86;
     letter-spacing: 0.02em;
     color: var(--fourth-text-color);
+    margin-bottom: 44px;
 }
 
 .about-btn {
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
     color: var(--second-btn-color);
 }
 
@@ -139,23 +198,18 @@ body {
 
 .prices {
     background-color: var(--second-title-color);
+    padding-top: 130px;
+    padding-bottom: 130px;
 }
 
 .prices-pre-title {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
     color: rgba(157, 164, 189, 0.6);
+    margin-bottom: 20px;
 }
 
 .prices-title {
-    font-family: "Raleway", sans-serif;
-    font-size: 42px;
-    line-height: 1.17;
-    letter-spacing: 0.05em;
     color: #ffffff;
+    margin-bottom: 44px;
 }
 
 .prices-list p {
@@ -166,11 +220,102 @@ body {
 }
 
 .prices-btn {
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: #ffffff;
+    color: var(--main-btn-color);
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
 }
+
+/* ---------------REASONS------------------ */
+
+.reasons {
+    padding-top: 121px;
+    padding-bottom: 130px;
+}
+
+.reasons-count {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--first-text-color);
+    display: block;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.reasons-item-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--first-text-color);
+}
+
+.reasons-item {
+    width: 170px;
+    height: 133px;
+    outline: 1px solid #000000;
+    padding: 20px 24px;
+}
+
+.reasons-pre-title {
+    color: var(--first-text-color);
+    margin-bottom: 20px;
+}
+
+.reasons-title {
+    color: var(--second-title-color);
+    margin-bottom: 20px;
+}
+
+.reasons-after-title {
+    color: var(--fourth-text-color);
+}
+/* ---------------MASTERS------------------ */
+
+.masters {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.masters-pre-title {
+    color: var(--first-text-color);
+    margin-bottom: 20px;
+}
+
+.masters-title {
+    color: var(--first-text-color);
+    margin-bottom: 44px;
+}
+
+.masters-item-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--second-title-color);
+    margin-bottom: 8px;
+}
+
+.masters-item-text {
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
+.masters-item-content {
+    padding-top: 30px;
+}
+
+/* ---------------GALLERY------------------ */
+
+/* ---------------ONLINE------------------ */
+
+/* ---------------CONTACTS------------------ */
+
+/* ---------------FOOTER------------------ */
