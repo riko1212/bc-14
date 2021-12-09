@@ -101,9 +101,38 @@ img {
 /* ---------------HEADER------------------ */
 
 .header {
-    background-color: rgb(46, 43, 43);
+    background-color: rgb(78, 74, 74);
     padding-top: 32px;
     padding-bottom: 32px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+}
+
+/* .header-item {
+    margin-right: 40px;
+}
+
+.header-item:last-child {
+    margin-right: 0;
+} */
+
+.header-item + .header-item {
+    margin-left: 40px;
+}
+
+.header-logo {
+    margin-right: 70px;
+}
+
+.header-contacts {
+    margin-left: auto;
 }
 
 .header-link {
@@ -120,6 +149,7 @@ img {
     line-height: 1.33;
     letter-spacing: 0.1em;
     color: var(--header-text-color);
+    margin-right: 40px;
 }
 
 .header-btn {
@@ -128,10 +158,19 @@ img {
 
 /* ---------------HERO------------------ */
 
-.hero {
+.hero-right {
     background-color: gray;
+    flex-grow: 1;
+    padding: 272px 0 206px 96px;
 }
 
+.hero-container {
+    display: flex;
+}
+
+.hero-list {
+    width: 93px;
+}
 .hero-link {
     font-weight: 600;
     font-size: 11px;
@@ -142,6 +181,7 @@ img {
 
 .hero-pre-title {
     color: rgba(157, 164, 189, 0.6);
+    margin-bottom: 20px;
 }
 
 .hero-title {
@@ -150,6 +190,7 @@ img {
     line-height: 1.18;
     letter-spacing: 0.05em;
     color: var(--main-title-color);
+    margin-bottom: 20px;
 }
 
 .hero-after-title {
@@ -166,6 +207,19 @@ img {
 .about {
     padding-top: 139px;
     padding-bottom: 121px;
+}
+
+.about-container {
+    display: flex;
+}
+
+.about-list {
+    display: flex;
+    margin-right: 64px;
+}
+
+.about-item:not(:last-child) {
+    margin-right: 30px;
 }
 .about-pre-title {
     color: var(--first-text-color);
@@ -205,6 +259,26 @@ img {
 .prices-pre-title {
     color: rgba(157, 164, 189, 0.6);
     margin-bottom: 20px;
+}
+
+.prices-wrap {
+    display: flex;
+}
+
+.prices-list {
+    border: 1px solid #ffffff;
+    width: 50%;
+    padding: 30px 40px;
+}
+
+.prices-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.prices-item:last-child {
+    margin-bottom: 0;
 }
 
 .prices-title {
@@ -278,6 +352,20 @@ img {
 .masters {
     padding-top: 130px;
     padding-bottom: 130px;
+}
+
+.masters-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.masters-item {
+    margin-right: 30px;
+    width: 370px;
+}
+
+.masters-item:nth-child(3n) {
+    margin-right: 0;
 }
 
 .masters-pre-title {
