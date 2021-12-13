@@ -32,7 +32,7 @@
                             <a href="" class="header-link link">О нас</a>
                         </li>
                         <li class="header-item">
-                            <a href="" class="header-link link"
+                            <a href="" class="header-link current link"
                                 >Услуги и цены</a
                             >
                         </li>
@@ -48,7 +48,11 @@
                     <a class="header-tel link" href="tel:+380441111111"
                         >+38 044 111 11 11</a
                     >
-                    <button type="button" class="btn header-btn">
+                    <button
+                        type="button"
+                        class="btn header-btn"
+                        data-modal-open
+                    >
                         онлайн-запись
                     </button>
                 </div>
@@ -397,5 +401,14 @@
                 </li>
             </ul>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-cloce-btn" data-modal-close>
+                    X
+                </button>
+            </div>
+        </div>
+
+        <script src="./js/modal.js"></script>
     </body>
 </html>
