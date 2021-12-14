@@ -13,6 +13,10 @@
         />
         <link
             rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link
+            rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
             integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
             crossorigin="anonymous"
@@ -61,19 +65,26 @@
         <main>
             <section class="hero">
                 <div class="container hero-container">
-                    <ul class="hero-list list">
-                        <li class="hero-item">
-                            <a href="" class="hero-link link">Instagram</a>
-                        </li>
-                        <li class="hero-item">
-                            <a href="" class="hero-link link">Youtube</a>
-                        </li>
-                    </ul>
+                    <div class="hero-left">
+                        <ul class="hero-list list">
+                            <li class="hero-item">
+                                <a href="" class="hero-link link">Instagram</a>
+                            </li>
+                            <li class="hero-item">
+                                <a href="" class="hero-link link">Youtube</a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="hero-right">
                         <p lang="en" class="pre-title hero-pre-title">
                             A hair salon for men in Kyiv
                         </p>
-                        <h1 lang="en" class="hero-title">BarberShop</h1>
+                        <h1
+                            lang="en"
+                            class="hero-title animate__animated animate__wobble"
+                        >
+                            BarberShop
+                        </h1>
                         <p class="after-title hero-after-title">
                             Мы экспертыв модных мужских стрижках Работаем
                             быстро, осторожно и со вкусом.
@@ -233,12 +244,33 @@
                     <h2 class="masters-title section-title">Наши мастера</h2>
                     <ul class="masters-list list">
                         <li class="masters-item">
-                            <img
-                                src="./img/masters-img1.jpg"
-                                alt="барбер стрижет клиента"
-                                width="370"
-                                height="346"
-                            />
+                            <div class="masters-item-wrap">
+                                <img
+                                    src="./img/masters-img1.jpg"
+                                    alt="барбер стрижет клиента"
+                                    width="370"
+                                    height="346"
+                                />
+                                <p class="masters-top-text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Deleniti minima ab
+                                    deserunt quae laborum nam eligendi
+                                    voluptatibus quo molestiae nesciunt unde
+                                    dignissimos dolorem similique, recusandae
+                                    pariatur officiis dolore. Excepturi alias
+                                    esse explicabo temporibus! Officia
+                                    architecto, ea perferendis, hic minima
+                                    dignissimos dolorem similique, recusandae
+                                    pariatur officiis dolore. Excepturi alias
+                                    esse explicabo temporibus! Officia
+                                    architecto, ea perferendis, hic minima
+                                    dignissimos dolorem similique, recusandae
+                                    pariatur officiis dolore. Excepturi alias
+                                    esse explicabo temporibus! Officia
+                                    architecto, ea perferendis, hic minima
+                                </p>
+                            </div>
+
                             <div class="masters-item-content">
                                 <h3 lang="en" class="masters-item-title">
                                     John Smith
@@ -288,6 +320,7 @@
                                 width="370"
                                 height="346"
                             />
+
                             <div class="masters-item-content">
                                 <h3 lang="en" class="masters-item-title">
                                     Michele Doe
