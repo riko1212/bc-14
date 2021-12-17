@@ -33,11 +33,11 @@
 .reasons-pre-title {
     color: var(--first-text-color);
     margin-bottom: 20px;
+    &::before {
+        background-color: var(--first-text-color);
+    }
 }
 
-.reasons-pre-title::before {
-    background-color: var(--first-text-color);
-}
 
 .reasons-title {
     color: var(--second-title-color);

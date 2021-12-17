@@ -1,0 +1,31 @@
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.socials__item + .socials__item {
+    margin-left: 10px;
+}
+
+.socials__link {
+    width: 44px;
+    height: 44px;
+    background-color: teal;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 300ms linear;
+    &:hover {
+        background-color: tomato;
+    }
+
+    &:hover svg {
+        fill: teal;
+        }
+}
+
+.socials__icon {
+    fill: #ffffff;
+    transition: fill 300ms linear;
+}
