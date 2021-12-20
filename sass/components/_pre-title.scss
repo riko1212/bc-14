@@ -1,7 +1,11 @@
 .pre-title {
-    @include font(11px, 15px, 600, 0.1em);
+    @include font(11px, 21px, 600, 0.1em); //lh 15
     text-transform: uppercase;
     @extend %align-list;
+    @media screen and (min-width: 1200px) {
+         @include font(11px, 15px, null, null);
+        
+    } 
     &::before {
         content: "";
         height: 1px;
